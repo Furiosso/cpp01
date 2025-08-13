@@ -11,11 +11,11 @@ CFILES = main.cpp\
 
 ODIR = build
 
-OFILES = $(addprefix $(ODIR)/, $(notdir $(CFILES:.c=.o)))
+OFILES = $(addprefix $(ODIR)/, $(notdir $(CFILES:.cpp=.o)))
 
 all: $(NAME)
 
-$(ODIR)/%.o: %.c
+$(ODIR)/%.o: %.cpp
 	@mkdir -p $(ODIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
