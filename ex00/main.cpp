@@ -6,5 +6,5 @@ int	main(void)
 
 	randomChump("Sergio");
 	pepe->announce();
-	delete(pepe);
+	delete pepe;
 }
