@@ -3,7 +3,6 @@ CC = c++
 NAME = unnecessaryViolence
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-
 CFILES = main.cpp\
 		 Weapon.cpp\
 		 HumanA.cpp\
